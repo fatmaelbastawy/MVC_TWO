@@ -1,0 +1,19 @@
+﻿@using MVC_Lab2.Models;
+
+@model List<Book>
+
+<html>
+<head>
+</head>
+<body>
+
+    <h1>Books List</h1>
+    @foreach (var item in Model)
+    {
+        <h2>@item.Name</h2>
+        <h3>@item.Desc</h3>
+        <h3>@item.AuthorId</h3>
+        <hr />
+    }
+</body>
+</html>
